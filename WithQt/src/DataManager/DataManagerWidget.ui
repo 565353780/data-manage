@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataManagerWidget</class>
+ <widget class="QWidget" name="DataManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1394</width>
+    <height>1013</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1371</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="VLayout_all" stretch="1">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="HLayout_all" stretch="5,1,0">
+      <item>
+       <layout class="QVBoxLayout" name="VLayout_Connect" stretch="0,0">
+        <item>
+         <layout class="QVBoxLayout" name="VLayout_Info" stretch="1,1,1,1,1,1,1">
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_1" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_database_type">
+              <property name="text">
+               <string>database type :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_database_type"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_2" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_connectionm_name">
+              <property name="text">
+               <string>connectionm name :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_connectionm_name"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_3" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_database_filename">
+              <property name="text">
+               <string>database filename :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_database_filename"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_4" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_host_name">
+              <property name="text">
+               <string>host name :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_host_name"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_5" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_port">
+              <property name="text">
+               <string>port :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_port"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_6" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_username">
+              <property name="text">
+               <string>username :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_username"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="HLayout_7" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="label_password">
+              <property name="text">
+               <string>password :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEdit_password"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Btn_Connect">
+          <property name="text">
+           <string>connect</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="VLayout_query" stretch="1,1,6,1">
+        <item>
+         <layout class="QHBoxLayout" name="HLayout_table_name">
+          <item>
+           <widget class="QLabel" name="label_table_name">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>table name :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_table_name">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="HLayout_query_key_value">
+          <item>
+           <widget class="QTextEdit" name="textEdit_QueryKey"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>=</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit_QueryValue"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="VSpacer_query">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Btn_Query">
+          <property name="text">
+           <string>query</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="VLayout_insert_delete">
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit_insert_delete_key_value"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="HLayout_Btns">
+          <item>
+           <widget class="QPushButton" name="Btn_Insert">
+            <property name="text">
+             <string>insert</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Btn_Delete">
+            <property name="text">
+             <string>delete</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_msg">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>1371</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
